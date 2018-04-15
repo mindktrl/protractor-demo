@@ -8,11 +8,11 @@
 
     It should allow user to submit a support ticket
 
-## Setup
+# Setup & Run tests: 
 
     Clone the repo
 
-## You need Node.js installed
+## Note: You need Node.js already installed
 
 ## cd into 
 
@@ -21,6 +21,10 @@
 ## In terminal (Gitbash), run
 
     npm install
+
+## Start Selenium Server by running this
+
+    webdriver-manager start 
 
 ## cd into
 
@@ -42,9 +46,12 @@
 
         ..\\ui-tests\tests\qualityreports\testresults\e2e\screenshots
 
-# VS Code Debugging
-Open VS Code debugging, click settings icon to open launch.json
+## VS Code Debugging
 
-Select `Launch Protractor` from DEBUG dropdown, then click Start button to debug
+    Open VS Code debugging
 
+        Select `Launch Protractor` from DEBUG dropdown, then click Start button to debug
 
+##Credit
+
+    MindKtrl
