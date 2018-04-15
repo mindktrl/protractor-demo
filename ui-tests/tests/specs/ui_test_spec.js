@@ -1,5 +1,4 @@
 var PageObject = require('./PageObject.js');
-var EC = protractor.ExpectedConditions;
 
 describe('4G Clinical help center', function () {
     var page;
@@ -10,13 +9,11 @@ describe('4G Clinical help center', function () {
         browser.get('https://support.4gclinical.com/hc/en-us');
     });
 
-    it('should search', function () {  
+    it('should display sign in help page when searching for sign in', function () {  
         page.searchField.click().sendKeys('sign in');
         page.searchButton.click();
         page.searchSignInResult.click()
-        //element(by.css('#query').sendKeys("user1"));
-        browser.sleep('4000');  
-
+        expect(browser.getCurrentUrl()).toEqual('https://support.4gclinical.com/hc/en-us/articles/360000850247-How-do-I-Sign-In-to-the-4G-Clinical-Help-Center-');  
     });
     // it('should launch sign in window after clicking sign in button', function () {  
     //     page.signIn.click();

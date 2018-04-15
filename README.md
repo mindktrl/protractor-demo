@@ -6,24 +6,24 @@ This project contains the Protractor/Selenium tests used to browser test the 4gc
 
     npm install protractor --save-dev
 
-#This will install two command line tools, protractor and webdriver-manager. Try running
+##This will install two command line tools, protractor and webdriver-manager. Try running
 
     protractor --version
 
-# The webdriver-manager is a helper tool to easily get an instance of a Selenium Server running. Use it to download the necessary binaries with:
+## The webdriver-manager is a helper tool to easily get an instance of a Selenium Server running. Use it to download the necessary binaries with:
 
     webdriver-manager update
 
-# Install reporting with 
+## Install reporting with 
 
     npm install protractor-jasmine2-html-reporter
 
-# Now start up a server with
+## Now start up a server with
 
     webdriver-manager start
 
-# Test Execution
-Ensure the MarketAxess server is already started
+## Test Execution
+
 Open your terminal i.e. 'Git Bash' here:
 
     ..\\ui-tests\tests

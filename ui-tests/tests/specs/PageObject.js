@@ -11,7 +11,7 @@ var PageObject = function()
     this.searchField = element(by.css('#query'));
     this.searchButton = element(by.name('commit'));
     this.searchSignInResult = element(by.linkText("How do I ‘Sign In’ to the 4G Clinical Help Center?"));
-    this.searchSignInResultTitle = element(by.xpath("//h1")).getText().matches("^How do I ‘Sign In’ to the 4G Clinical Help Center[\\s\\S]$");
+    //this.searchSignInResultTitle = element(by.xpath("//h1")).getText().matches("^How do I ‘Sign In’ to the 4G Clinical Help Center[\\s\\S]$");
 
 
     this.signInPassword = element(by.id('user_password'));
