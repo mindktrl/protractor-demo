@@ -52,6 +52,6 @@
 
         Select `Launch Protractor` from DEBUG dropdown, then click Start button to debug
 
-##Credit
+## Credit
 
     MindKtrl
