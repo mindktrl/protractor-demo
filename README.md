@@ -52,6 +52,39 @@
 
         Select `Launch Protractor` from DEBUG dropdown, then click Start button to debug
 
+## Here are instructions on how to install all dependencies from scratch (if you have problems installing via package.json):
+
+    Open terminal (Gitbash) in this directory: 
+        ui-tests
+
+## Use npm to install Protractor with:
+
+    npm install protractor --save-dev
+
+## This will install two command line tools, protractor and webdriver-manager. Try running
+
+    protractor --version
+
+## The webdriver-manager is a helper tool to easily get an instance of a Selenium Server running. Use it to download the necessary binaries with:
+
+    webdriver-manager update
+
+## Install reporting with 
+
+    npm install protractor-jasmine2-html-reporter
+
+## Now start up a server with
+
+    webdriver-manager start
+
+## cd into
+
+    /tests
+
+## Run protractor tests with:
+
+    protractor ui-tests.conf.js
+
 ## Credit
 
     MindKtrl
